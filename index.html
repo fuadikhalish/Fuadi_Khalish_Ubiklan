@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.98.0">
+  <title>UbiSreen</title>
+  <link rel="shorcut icon" href="assets/image/small-logo.png">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+  <link href="my_css.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/jquery.schedule-master/dist/css/style.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="navbar bg-light sticky-top flex-md-nowrap p-0 shadow">
+    <img class="col-md-3 col-lg-2 me-0 px-3 fs-6" style="width:200px" src="assets/image/logo.png"></img>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="custom-search">
+      <input type="text" class="custom-search-input" placeholder="Search">
+      <button class="custom-search-botton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <i class="fa-solid fa-bell fa-lg" style="margin-left: 10px"></i>
+    <div class="flex-shrink-0 dropdown" style="margin-left: 20px;margin-right : 130px;">
+      <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <strong data-letters="J">John Doe</strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- sidebar -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <i class="fa-solid fa-table-cells-large"></i>&nbsp;&nbsp;&nbsp;
+                Overview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fa-solid fa-display"></i>&nbsp;&nbsp;&nbsp;
+                Screen
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-photo-film"></i>&nbsp;&nbsp;&nbsp;
+                Media
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-list-ul"></i>&nbsp;&nbsp;&nbsp;
+                Playlist
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-calendar-check"></i>&nbsp;&nbsp;&nbsp;
+                Schedule
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;&nbsp;&nbsp;
+                Statistic
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-credit-card"></i>&nbsp;&nbsp;&nbsp;
+                Payouts
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;
+                Setting
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end sidebar -->
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+        <!-- breadcrumb -->
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+          <nav
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><strong>Videotron</strong></a></li>
+              <li class="breadcrumb-item active" aria-current="page"><strong>UB0022373 - Videotron 001 </strong></li>
+            </ol>
+          </nav>
+        </div>
+        <!-- end breadcrumb -->
+
+        <!-- Tabs navs -->
+        <div class="tabs">
+          <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link show active" id="ex1-tab-1" data-mdb-toggle="tab" href="#tabs-1" role="tab"
+                aria-controls="ex1-tabs-1" aria-selected="true"> <strong>Detail</strong></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#tabs-2" role="tab"
+                aria-controls="ex1-tabs-2" aria-selected="false"> <strong>Schedule</strong></a>
+            </li>
+          </ul>
+          <div class="tab-content" id="ex1-content">
+            <div class="tab-pane fade show active" id="tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+              <div class="mb-3">
+                <span class="badge" style="width: 15px;height: 15px;border-radius: 10px;background-color: #20c997;">
+                </span><strong> &nbsp;&nbsp;&nbsp; Turned on</strong>
+              </div>
+              <div class="row">
+                <div class="col-md-6 text-center">
+                  <image id="main-thumb" src="assets/image/image-2.png"
+                    style="width: 100%;height: auto;border-radius: 10px;" alt="image-thumb"></image>
+                  <div>
+                    <div class="row" id="image-selector">
+                      <div class="col-md-3">
+                        <image class="img-select selected" src="assets/image/image-2.png"
+                          style="width: 145px;height: auto;border-radius: 10px;"></image>
+                      </div>
+                      <div class="col-md-3">
+                        <image class="img-select" src="assets/image/image-3.png"
+                          style="width: 145px;height: auto;border-radius: 10px;"></image>
+                      </div>
+                      <div class="col-md-3">
+                        <image class="img-select" src="assets/image/image-4.png"
+                          style="width: 145px;height: auto;border-radius: 10px;"></image>
+                      </div>
+                      <div class="col-md-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5" style="padding: 15px;padding-left: 30px;">
+                  <strong>Videotron 001</strong><br>
+                  ID: 0012341
+                  <div class="mt-3 container"
+                    style="background-color: rgb(247, 247, 247);width: auto;height: auto;border-radius: 10px;padding: 20px;">
+                    <p class="" style="color: grey"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Mal Taman
+                      Palem, lt8, Cengkareng, Jakarta Barat, DKI Jakarta
+                    <div></div>
+                    </p>
+                    <button class="btn"> <span style="color: #f79432;padding-left: 10px;">See on Maps
+                        <i class="fa-solid fa-angles-right"></i></span> &nbsp; </button>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-md-6">
+                      <strong>Type</strong><br>
+                      Videotron
+                      <br><br><strong>Size</strong><br>
+                      40 inch
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Resolution</strong><br>
+                      Widescreen 16:9 (1920x1080)
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"><button class="btn btn-primary" style="width: 100%"><i
+                      class="fa-solid fa-pen-to-square"></i>
+                    Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+            <div style="padding: 0 0 40px;">
+              <div class="row">
+                <div class="col-md-1 mb-2">
+                  <button class="btn btn-primary">Today</button>
+                </div>
+                <div class="col-md-2 text-center">
+                  <button class="btn" id="date-min"><i class="fa-solid fa-angle-left"
+                      style="color: grey"></i></button>&nbsp;&nbsp;&nbsp;<strong id="getMonth"></strong> <strong
+                    id="getYear"></strong>&nbsp;&nbsp;&nbsp;<button class="btn" id="date-plus"><i
+                      class="fa-solid fa-angle-right" style="color: grey"></i></button>
+                </div>
+              </div>
+              <div id="schedule" class="mt-3"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </main>
+  </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js" type="text/javascript"
+    language="javascript"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/jquery.schedule-master/dist/js/jq.schedule.min.js"></script>
+  <script type="text/javascript">
+  </script>
+  <script src="my_js.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
